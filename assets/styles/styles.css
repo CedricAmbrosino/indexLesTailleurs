@@ -1,0 +1,386 @@
+:root{
+	--colorDarkGrey: #222226aa;
+	--colorBlackGrey: #151518;
+	
+	--colorPurple: #800080;
+	--colorPurpletransp: #800080aa;
+}
+
+*{
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.9 rem;
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+a{
+	outline: none;
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+
+h1{
+	font-size: 2.2rem;
+}
+
+h2{
+	font-size: 1.8rem;
+}
+
+.sublimText{
+	color: purple;
+}
+
+
+.contact ,nav, header{
+	max-width:1000px;
+}
+
+.button{
+	display: block;
+	padding: 10px 20px;
+	background-color: transparent;
+	border: 2px solid var(--colorPurple);
+	border-radius: 30px;
+	
+}
+.button:hover{
+	background-color: var(--colorPurpletransp);
+	color: white;
+}
+
+input:focus{
+	border: 1px solid var(--colorPurple);
+	outline: none;
+}
+
+textArea:focus{
+	border: 1px solid var(--colorPurple);
+	outline: none;
+}
+/********firstContainer********/
+.firstContainer{
+	background: url(../images/1.jpg) no-repeat center/cover;
+	max-height:650px;
+}
+.firstContainer_color{
+	background-color: #222226aa;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*********Contact**************/
+.contact{
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	width:100%;
+	border-bottom: 1px solid #ffffff55;
+	height: 40px;
+}
+
+.contact > div{
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	font-size: 0.8rem;
+}
+
+.contact_left i{
+	margin: 0px 8px 0px 20px;
+}
+
+.contact_telephone{
+	display: flex;
+	justify-content: space-around;
+	align-items:center;	
+}
+
+.contact_telephone p{
+	margin-left: 8px;
+}
+
+.contact ul{
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	margin: 0px 20px;
+}
+
+.contact a{
+	color: white;
+	margin: 0px 10px;
+	font-size:13px;
+}
+
+/******Nav**********/
+
+nav{
+	width:100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	padding-top:30px;
+}
+
+.nav_titre {
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-left: 20px;
+	color: white;
+}
+
+.nav_titre h1{
+	font-size: 1.1rem;
+	font-weight:600px;
+}
+
+.nav_titre p{
+	font-size: 0.8rem;
+}
+
+nav ul{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0px 35px;
+	width:auto;
+	width:80%
+}
+
+nav li{
+	margin-left: 5%;
+}
+
+nav a{
+	color:white;
+	font-size: 0.92rem;
+}
+
+/******header**********/
+
+header{
+	width:100%;
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.header_left{
+	border-bottom: 1px solid white;
+	width: 60px;
+	margin: 5px 0px;
+}
+
+/******Section des besoins******/
+.sectionOffres{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 30px 0px;
+	text-align: center;
+}
+
+
+.sectionOffres_Services{
+	max-width: 800px;
+}
+.sectionOffres_Services h1{
+	margin: 20px 0px 10px 0px;
+}
+.sectionOffres_Services > p{
+	margin: 10px 0px 30px 0px;
+}
+.sectionOffres_Services_sectionOffres_grilleServices{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.sectionOffres_Services_grilleServices_img{
+	width: 230px;
+	height: 200px;
+	margin: 10px 0px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.sectionOffres_Services_grilleServices_img p{
+	color: white;
+	background-color: var(--colorDarkGrey);
+	font-size: 13px;
+	height: 38px;
+	width:100%;
+}
+
+.imgService1{
+	background: url( ../images/services/1.jpg) no-repeat center/cover;
+}
+.imgService2{
+	background: url( ../images/services/2.jpg) no-repeat center/cover;
+}
+.imgService3{
+	background: url( ../images/services/3.jpg) no-repeat center/cover;
+}
+.imgService4{
+	background: url( ../images/services/4.jpg) no-repeat center/cover;
+}
+.imgService5{
+	background: url( ../images/services/5.jpg) no-repeat center/cover;
+}
+.imgService6{
+	background: url( ../images/services/6.jpg) no-repeat center/cover;
+}
+
+/******Nous contacter********/
+.nousContacter{
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.nousContacter > form{
+	margin: 20px 0px 10px 0px;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 60px 30px 60px 200px 100px;
+	column-gap: 10px;
+}
+
+.labelNom{
+	grid-area: 1 / 1 / span 1 / 2;
+	text-align: center;
+	line-height:60px;
+}
+.labelPrenom{
+	grid-area: 1 / 2 / span 1 / 3;
+	text-align: center;
+	line-height:60px;
+}
+
+.inputNom{
+	grid-area: 2 / 1 / span 1 / 2;
+}
+
+.inputPrenom{
+	grid-area: 2 / 2 / span 1 / 3;
+}
+
+.labelMessage{
+	grid-area: 3 / 1 / span 1 / 3;
+	text-align: center;
+	line-height: 60px;
+}
+
+.textArea{
+	grid-area: 4 / 1 / span 1 / 3;
+	resize: none;
+}
+
+.buttonSubmit{
+	grid-area: 5 / 1 / span 1 / 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/******footer*******/
+footer{
+	background-color : var(--colorBlackGrey);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;	
+	font-size: 0.8rem;
+	padding: 22px 0px 15px 0px;
+}
+
+.footer-line{
+	border-bottom: 1px solid white;
+	width: 50px;
+	margin: 10px 0px;
+}
+
+footer ul{
+	display: flex;
+}
+footer ul li{
+	margin: 10px;	
+}
+footer ul a{
+	color: white;	
+}
+
+/******** RESPONSIVE **************/
+@media screen and (max-width: 900px) {
+	.contact_right{
+		margin-right: 20px;
+	}
+	.contact_right ul{
+		display: none;
+	}
+	
+	nav{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav_titre{
+		display: none;
+	}
+	
+	nav ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.contact{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 80px;
+	}
+	
+	nav{
+		height : 100px;
+	}
+	
+	.nousContacter > form{
+		margin: 20px 0px 10px 0px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.nousContacter input[type=text]{
+		width: 80%;
+		height: 30px;
+	}
+	.nousContacter textArea{
+		width: 80%;
+		height: 150px;
+		margin-bottom: 20px;
+	}
+	
+}
